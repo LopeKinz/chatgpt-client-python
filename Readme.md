@@ -12,7 +12,7 @@
 
 Run with Python
 
-* `Paste OPENAI Api Key into Settings.json`
+* `Paste OPENAI Api Key into YOUR_API_KEY`
 
 ```bash
 python3 main.py
