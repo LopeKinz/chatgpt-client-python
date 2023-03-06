@@ -1,12 +1,11 @@
 
-
 # GPT Client
-## A Gui Client made in Python for Chat-GPT
+## A Gui Client made in Python
 
 * `Easy Use`
 * `Easy Setup`
 * `Dark and Light Mode`
-* `File Write Mode`
+* `File Wirte Mode`
 * `Jailbreak Mode`
 
 ## Installation
@@ -14,8 +13,6 @@
 Run with Python
 
 * `Paste OPENAI Api Key into Settings.json`
-* `Run the .exe` 
-* or
 
 ```bash
 python3 main.py
@@ -33,3 +30,8 @@ python3 main.py
 
 
 
+## Roadmap
+- `06.03.2023`
+- Dark/Light Theme
+- Core ChatGPT Client
+-----------
