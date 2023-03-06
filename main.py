@@ -82,15 +82,27 @@ class ChatGUI:
         self.send_button.configure(bg="#FFFFFF", fg="#000000")
         self.toggle_button.configure(bg="#FFFFFF", fg="#000000")
 
+        # Pack all the UI elements
+        self.conversation.pack(fill="both", expand=True, padx=5, pady=5)
+        self.input_field.pack(side="left", fill="both", expand=True, padx=
+        # Set the initial theme to light mode
+        self.set_light_theme()
+
+  
     # Method to set the GUI theme to dark mode
     def set_dark_theme(self):
-        self.master.configure(bg="#222222")
-        self.conversation.configure(bg="#444444", fg="#FFFFFF")
-        self.input_field.configure(bg="#333333", fg="#FFFFFF")
-        self.send_button.configure(bg="#333333", fg="#FFFFFF")
-        self.toggle_button.configure(bg="#333333", fg="#FFFFFF")
+        self.master.configure(bg="#292929")
+        self.conversation.configure(bg="#121212", fg="#FFFFFF")
+        self.input_field.configure(bg="#121212", fg="#FFFFFF")
+        self.send_button.configure(bg="#121212", fg="#FFFFFF")
+        self.toggle_button.configure(bg="#292929", fg="#FFFFFF")
 
-#Create the main window and start the GUI
+        # Pack all the UI elements
+        self.conversation.pack(fill="both", expand=True, padx=5, pady=5)
+        self.input_field.pack(side="left", fill="both", expand=True, padx=5, pady=5)
+        self.send_button.pack(side="left", padx=5, pady=5)
+        self.toggle_button.pack(side="bottom", padx=5, pady=5)
+
 root = tk.Tk()
 chat_gui = ChatGUI(root)
 root.mainloop()
