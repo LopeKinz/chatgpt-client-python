@@ -14,6 +14,8 @@
 Run with Python
 
 * `Paste OPENAI Api Key into Settings.json`
+* `Run the .exe` 
+* or
 
 ```bash
 python3 main.py
