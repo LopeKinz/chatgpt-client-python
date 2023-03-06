@@ -1,7 +1,7 @@
 
 
 # GPT Client
-## A Gui Client made in Python
+## A Gui Client made in Python for Chat-GPT
 
 * `Easy Use`
 * `Easy Setup`
