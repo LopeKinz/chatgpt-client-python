@@ -4,12 +4,12 @@ import openai
 import threading
 
 # Set up OpenAI API credentials
-openai.api_key = "YOUR_API_KEY"
+openai.api_key = "YOUR_TOKEN"
 
 # Define the ChatGPT function that sends a prompt to OpenAI and returns the response
 def chat_gpt(prompt):
     response = openai.Completion.create(
-        engine="davinci",
+        engine="text-davinci-003",
         prompt=prompt,
         max_tokens=1024,
         n=1,
@@ -37,14 +37,7 @@ class ChatGUI:
         self.send_button = tk.Button(master, text="Send", command=self.send_message)
         self.send_button.grid(row=1, column=1, padx=5, pady=5)
 
-        # Create the dark mode toggle button
-        self.dark_mode = tk.BooleanVar()
-        self.dark_mode.set(False)
-        self.toggle_button = tk.Checkbutton(master, text="Dark Mode", variable=self.dark_mode, command=self.toggle_theme)
-        self.toggle_button.grid(row=2, column=0, columnspan=2)
 
-        # Set the initial theme to light mode
-        self.set_light_theme()
 
     # Method to send a message and get a response from ChatGPT
     def send_message(self):
@@ -68,40 +61,7 @@ class ChatGUI:
         self.conversation.insert(tk.END, "ChatGPT: " + response + "\n")
 
     # Method to toggle the GUI theme between light and dark mode
-    def toggle_theme(self):
-        if self.dark_mode.get():
-            self.set_dark_theme()
-        else:
-            self.set_light_theme()
 
-    # Method to set the GUI theme to light mode
-    def set_light_theme(self):
-        self.master.configure(bg="#FFFFFF")
-        self.conversation.configure(bg="#F0F0F0", fg="#000000")
-        self.input_field.configure(bg="#FFFFFF", fg="#000000")
-        self.send_button.configure(bg="#FFFFFF", fg="#000000")
-        self.toggle_button.configure(bg="#FFFFFF", fg="#000000")
-
-        # Pack all the UI elements
-        self.conversation.pack(fill="both", expand=True, padx=5, pady=5)
-        self.input_field.pack(side="left", fill="both", expand=True, padx=
-        # Set the initial theme to light mode
-        self.set_light_theme()
-
-  
-    # Method to set the GUI theme to dark mode
-    def set_dark_theme(self):
-        self.master.configure(bg="#292929")
-        self.conversation.configure(bg="#121212", fg="#FFFFFF")
-        self.input_field.configure(bg="#121212", fg="#FFFFFF")
-        self.send_button.configure(bg="#121212", fg="#FFFFFF")
-        self.toggle_button.configure(bg="#292929", fg="#FFFFFF")
-
-        # Pack all the UI elements
-        self.conversation.pack(fill="both", expand=True, padx=5, pady=5)
-        self.input_field.pack(side="left", fill="both", expand=True, padx=5, pady=5)
-        self.send_button.pack(side="left", padx=5, pady=5)
-        self.toggle_button.pack(side="bottom", padx=5, pady=5)
 
 root = tk.Tk()
 chat_gui = ChatGUI(root)
