@@ -3,6 +3,9 @@
 ## A Gui Client made in Python
 ### Work in Progress
 ----------------------------
+
+<a href="https://imgur.com/NSHZn1q"><img src="https://i.imgur.com/NSHZn1q.png" title="source: imgur.com" /></a>
+
 * `Easy Use`
 * `Easy Setup`
 * `Dark and Light Mode`
