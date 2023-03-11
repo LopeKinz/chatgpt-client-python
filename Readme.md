@@ -1,7 +1,8 @@
 
 # GPT Client
 ## A Gui Client made in Python
-
+### Work in Progress
+----------------------------
 * `Easy Use`
 * `Easy Setup`
 * `Dark and Light Mode`
