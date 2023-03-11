@@ -13,6 +13,8 @@
 
 Run with Python
 
+* `Get API key here : https://platform.openai.com/account/api-keys`
+
 * `Paste OPENAI Api Key into YOUR_API_KEY`
 
 ```bash
@@ -32,6 +34,10 @@ python3 main.py
 
 
 ## Roadmap
+- `11.03.2023`
+- Removed Darkmode due to issues
+- Both versions finally working
+-----------
 - `06.03.2023`
 - Dark/Light Theme
 - Core ChatGPT Client
