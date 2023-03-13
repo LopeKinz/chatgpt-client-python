@@ -45,3 +45,8 @@ python3 main.py
 - Dark/Light Theme
 - Core ChatGPT Client
 -----------
+
+## Contribute
+- Everyone can Contribute to this Project. Fork this Repo and Create a Pull Request.
+
+
