@@ -9,7 +9,7 @@
 * `Easy Use`
 * `Easy Setup`
 * `Dark and Light Mode`
-* `File Wirte Mode`
+* `File Write Mode`
 * `Jailbreak Mode`
 
 ## Installation
