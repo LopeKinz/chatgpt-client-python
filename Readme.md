@@ -37,6 +37,10 @@ python3 main.py
 
 
 ## Roadmap
+- `15.03.2023`
+- Added Buttons for Jailbreaking
+- Added Tab for Jailbreaking
+-----------
 - `11.03.2023`
 - Removed Darkmode due to issues
 - Both versions finally working
