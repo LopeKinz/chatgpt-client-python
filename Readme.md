@@ -4,6 +4,8 @@
 ### Work in Progress
 ----------------------------
 
+* Star the Project to keep me motivated for this project :)
+
 <a href="https://imgur.com/NSHZn1q"><img src="https://i.imgur.com/NSHZn1q.png" title="source: imgur.com" /></a>
 
 * `Easy Use`
