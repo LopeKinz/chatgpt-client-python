@@ -48,7 +48,7 @@ class ChatGUI:
         self.input_field.delete(0, tk.END)
 
         # Add the user's message to the conversation area
-        self.conversation.insert(tk.END, "You: " + message + "\n")
+        self.conversation.insert(tk.END, f"You: {message}" + "\n")
 
         # Call ChatGPT to get a response
         threading.Thread(target=self.get_response, args=(message,)).start()
@@ -58,7 +58,7 @@ class ChatGUI:
         response = chat_gpt(message)
 
         # Add the response to the conversation area
-        self.conversation.insert(tk.END, "ChatGPT: " + response + "\n")
+        self.conversation.insert(tk.END, f"ChatGPT: {response}" + "\n")
 
     # Method to toggle the GUI theme between light and dark mode
 

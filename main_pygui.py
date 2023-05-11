@@ -66,17 +66,17 @@ while True:
         window['input_message'].update('')
 
         # Add the user's message to the conversation area
-        window['conversation'].print('You: ' + message)
+        window['conversation'].print(f'You: {message}')
 
         # Call ChatGPT to get a response
         response = chat_gpt(message)
 
         # Add the response to the conversation area
-        window['conversation'].print('ChatGPT: ' + response)
+        window['conversation'].print(f'ChatGPT: {response}')
 
     # Copy the text to the clipboard when the button is clicked
     if event.startswith('Button'):
-        pyperclip.copy('Button ' + event[-1] + ' text copied to clipboard!')
+        pyperclip.copy(f'Button {event[-1]} text copied to clipboard!')
 
 # Close the PySimpleGUI window when the event loop is exited
 window.close()
